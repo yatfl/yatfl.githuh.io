@@ -1,10 +1,129 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8"/>
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Hangboard Timer</title>
+    <style>
+      :root {
+        --bg-color: #f5f5f7;
+        --card-bg: #ffffff;
+        --text-color: #1d1d1f;
+        --accent-color: #0071e3;
+        --border-color: #d2d2d7;
+      }
+      body {
+        font-family:
+          -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
+          Arial, sans-serif;
+        background-color: var(--bg-color);
+        color: var(--text-color);
+        line-height: 1.5;
+        margin: 0;
+        padding: 40px 20px;
+        display: flex;
+        justify-content: center;
+      }
+      .container {
+        max-width: 600px;
+        width: 100%;
+        background: var(--card-bg);
+        padding: 32px;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      }
+      h1 {
+        font-size: 28px;
+        font-weight: 700;
+        margin-top: 0;
+        margin-bottom: 8px;
+      }
+      .subtitle {
+        color: #86868b;
+        margin-bottom: 24px;
+      }
+      h2 {
+        font-size: 20px;
+        margin-top: 24px;
+        margin-bottom: 12px;
+        border-bottom: 1px solid var(--border-color);
+        padding-bottom: 6px;
+      }
+      p,
+      li {
+        font-size: 16px;
+      }
+      ul {
+        padding-left: 20px;
+      }
+      li {
+        margin-bottom: 8px;
+      }
+      .btn {
+        display: inline-block;
+        background-color: var(--accent-color);
+        color: white;
+        text-decoration: none;
+        padding: 12px 24px;
+        border-radius: 8px;
+        font-weight: 600;
+        margin-top: 8px;
+      }
+      .btn:hover {
+        background-color: #0077ed;
+      }
+      footer {
+        margin-top: 40px;
+        text-align: center;
+        font-size: 14px;
+        color: #86868b;
+      }
+    </style>
   </head>
   <body>
-    <text>Hello World</text>
+    <div class="container">
+      <h1>Official Simple Hangboard Timer Support Page</h1>
+      <p class="subtitle">iOS app developed by Yat Fung Loo.</p>
+
+      <p>
+        Thank you for using Simple Hangboard Timer! If you are experiencing
+        technical difficulties, have feature requests, or need assistance,
+        please use the resources below.
+      </p>
+
+      <h2>Contact Support</h2>
+      <p>
+        You can reach me directly via email. Please include details about your
+        issue and your device model if applicable.
+      </p>
+      <ul>
+        <li>
+          <strong>Email:</strong>
+          <a href="mailto:looyatfung@gmail.com">looyatfung@gmail.com</a>
+        </li>
+        <li><strong>Estimated Response Time:</strong> Within 24–48 hours.</li>
+      </ul>
+      <a href="mailto:looyatfung@gmail.com" class="btn">Email Yat Fung</a>
+
+      <h2>Data Privacy</h2>
+      <p>
+        All data are stored locally, there is no option to open an account.
+        Deleting the app will permanently delete all personal data and log.
+      </p>
+
+      <div class="privacy-section">
+        Please refer to the
+        <a
+          class="privacy-link"
+          href="https://gist.github.com/yatfl/7575bf73c15bd7deee7477c848d388e3"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Timer Privacy Policy</a
+        >
+        for more details.
+      </div>
+
+      <footer>&copy; 2026 Yat Fung Loo. All rights reserved.</footer>
+    </div>
   </body>
 </html>
